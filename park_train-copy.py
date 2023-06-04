@@ -66,7 +66,7 @@ def fitness(genomes, config):
                     #print(x,i,state, car.angle , car.velocity)
                     if if_collision:
                         ge[cars.index(car)].fitness -= 50
-                    ge[x].fitness = 100 - math.dist((car.x, car.y), (0, 0)) - abs(car.alpha)
+                    ge[x].fitness = 100 - math.dist((car.x, car.y), (-1, -1)) - abs(car.alpha)
 
                     line = str(indexes[+x-POP_SIZE]) + " " + str(i) + " " + str (state[0]) + " " + str (state[1]) + " " + str (state[2]) + " " + str(car.angle) + " " + str(car.velocity) + "\n"
                     file.write(line)
