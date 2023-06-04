@@ -19,6 +19,9 @@ class Car:
 
 
 def fitness(genomes, config):
+
+
+
     filename = 'data.txt'
     with open(filename, 'a') as file:
             nets = []
