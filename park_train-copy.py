@@ -76,6 +76,9 @@ def fitness(genomes, config):
 
 
 
+
+
+
 def run_neat(config):
     #p = neat.Checkpointer.restore_checkpoint('best.pickle')
     p = neat.Population(config)
